@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Digital Clock -->
+        <div class="glass-card fade-in">
+            <h2>Digital Clock</h2>
+            <div class="clock" id="clock"></div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="glass-card fade-in">
+            <h2>Countdown Timer</h2>
+            <input type="datetime-local" id="targetTime">
+            <button class="btn" onclick="startCountdown()">Start</button>
+            <div id="timer">Select a date & time</div>
+        </div>
+
+    </div>
+
+    <canvas id="bg-animation"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
